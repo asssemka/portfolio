@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1rem;
+  border-bottom: 0.2px solid var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title{
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+
+
+.kassenova{
+  margin-left: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h1 {
+  display: block;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-right nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-right nav a,
+.header-right nav button,
+.header-right nav select {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.header-right nav a:hover,
+.header-right nav button:hover,
+.header-right nav select:hover {
+  transform: translateY(-10px);
+}
+
+.header-right nav button,
+.header-right nav select {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.header-right nav select {
+  appearance: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.header-right nav button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  cursor: pointer;
+}

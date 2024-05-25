@@ -1,0 +1,116 @@
+.services-section {
+    padding: 4rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .services-title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-item {
+    font-size: 7rem; /* Увеличенный размер шрифта */
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin: 1.5rem 0; /* Увеличенное расстояние между словами */
+  }
+  
+  .service-item.left {
+    align-self: flex-start;
+    transform: translateX(-20%);
+  }
+  
+  .service-item.right {
+    align-self: flex-end;
+    transform: translateX(20%);
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px) translateX(0);
+  }
+  
+  .service-image {
+    position: absolute;
+    top: 50%;
+    width: 500px; /* Увеличенный размер изображения */
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .service-image.left {
+    right: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .service-image.right {
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .service-item:hover .service-image {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  
+ 
+  
+  @media (max-width: 1200px) {
+    .service-item {
+      font-size: 5rem; /* Уменьшенный размер шрифта для средних экранов */
+    }
+  
+    .service-image {
+      width: 400px; /* Уменьшенный размер изображения для средних экранов */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-item {
+      font-size: 4rem; /* Уменьшенный размер шрифта для планшетов */
+      margin: 1rem 0; /* Уменьшенное расстояние между словами для планшетов */
+    }
+  
+    .service-image {
+      width: 300px; /* Уменьшенный размер изображения для планшетов */
+    }
+  
+    .service-item.left {
+      transform: translateX(-10%);
+    }
+  
+    .service-item.right {
+      transform: translateX(10%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-item {
+      font-size: 2rem; /* Уменьшенный размер шрифта для мобильных устройств */
+      margin: 0.5rem 0; /* Уменьшенное расстояние между словами для мобильных устройств */
+    }
+  
+    .service-image {
+      width: 200px; /* Уменьшенный размер изображения для мобильных устройств */
+    }
+  
+    .service-item.left,
+    .service-item.right {
+      transform: translateX(0);
+      align-self: center;
+    }
+  }
+  

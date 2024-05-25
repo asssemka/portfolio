@@ -1,0 +1,29 @@
+@import './theme.css';
+:root {
+    --transition-duration: 0.5s;
+    --line-width: 10px;
+    --card-border-radius: 15px;
+    
+    --light-background-color: #e7e4d8; /* Бежевый цвет для светлой темы */
+    --light-text-color: #594b32; /* Темно-коричневый цвет для светлой темы */
+    
+    --dark-background-color: #585244; /* Темно-коричневый цвет для темной темы */
+    --dark-text-color: #e7e4d8; /* Белый цвет для темной темы */
+  }
+  
+  [data-theme='light'] {
+    --background-color: var(--light-background-color);
+    --text-color: var(--light-text-color);
+    --line-color: var(--light-text-color);
+    --card-shadow-color: rgba(0, 0, 0, 0.1); /* Тень для светлой темы */
+  }
+  
+  [data-theme='dark'] {
+    --background-color: var(--dark-background-color);
+    --text-color: var(--dark-text-color);
+    --line-color: var(--dark-text-color);
+    --card-shadow-color: rgba(255, 255, 255, 0.2); /* Белая тень для темной темы */
+  }
+  
+  
+  

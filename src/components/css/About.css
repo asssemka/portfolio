@@ -1,0 +1,44 @@
+.about-section {
+    padding: 2rem;
+    border-radius: 50% 50% 0 0;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .about-section.light {
+    background-color: #594b32;
+    color: #e7e4d8;
+  }
+  
+  .about-section.dark {
+    background-color: #e7e4d8;
+    color: #594b32;
+  }
+  
+  .about-description {
+    margin-bottom: 2rem;
+  }
+  
+  .accordion {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .accordion-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid currentColor;
+  }
+  
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+  
+  .accordion-content {
+    padding: 1rem 0;
+  }
+  

@@ -1,0 +1,15 @@
+.profile {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .profile h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .profile p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
